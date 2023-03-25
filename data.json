@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "name": "Jordan 1 Retro High",
+        "mainName": "Dior",
+        "img": "./Jordan1RetroHighDior.jpg",
+        "price":"$7,000"
+    },
+    {
+        "id":2,
+        "name": "Jordan 1 Retro High",
+        "mainName": "Bloodline",
+        "img": "./Jordan1RetroHighBloodline.png",
+        "price":"$229"
+    },
+    {
+        "id":3,
+        "name": "Jordan 1 Retro High ",
+        "mainName": "Off-White Chicago",
+        "img": "./shoes-pic/Jordan1RetroHighOff-WhiteChicago-PhotoRoom.png-PhotoRoom.png",
+        "price":"$4,589"
+    },
+    {
+        "id":4,
+        "name": "Jordan 1 Retro High ",
+        "mainName": "Off-White University Blue",
+        "img": "./shoes-pic/Jordan1RetroHighOff-WhiteUniversityBlue-PhotoRoom.png-PhotoRoom.png",
+        "price":"$1,477"
+    },
+    {
+        "id":5,
+        "name": "Jordan 1 Retro High OG",
+        "mainName": "Atmosphere",
+        "img": "./Jordan1RetroHighOGAtmosphere.avif",
+        "price":"$155"
+    },
+    {
+        "id":6,
+        "name": "Jordan 1 Retro High OG",
+        "mainName": "Chicago Lost and Found",
+        "img": "./shoes-pic/Jordan1RetroHighOGChicagoLostandFound-PhotoRoom.png-PhotoRoom.png",
+        "price":"$234"
+    },
+    {
+        "id":7,
+        "name": "Jordan 1 Retro High OG",
+        "mainName": "Patent Bred",
+        "img": "./shoes-pic/Jordan1RetroHighOGPatentBred-PhotoRoom.png-PhotoRoom.png",
+        "price":"$182"
+    },
+    {
+        "id":8,
+        "name": "Jordan 1 Retro High OG SP",
+        "mainName": "Travis Scott",
+        "img": "./Jordan1RetroHighOGSPTravisScott.avif",
+        "price":"$1,328"
+    },
+    {
+        "id":9,
+        "name": "Jordan 1 Retro High ",
+        "mainName": "White University Blue Black",
+        "img": "./shoes-pic/Jordan1RetroHighWhiteUniversityBlueBlack-PhotoRoom.png-PhotoRoom.png",
+        "price":"$322"
+    },
+    {
+        "id":10,
+        "name": "Jordan 1 Retro Low OG SP",
+        "mainName": "Fragment x Travis Scott",
+        "img": "./shoes-pic/Jordan1RetroLowOGSPFragmentxTravisScott-PhotoRoom.png-PhotoRoom.png",
+        "price":"$1,050"
+    },
+    {
+        "id":11,
+        "name": "Jordan 1 Retro Low OG SP",
+        "mainName": "Travis Scott",
+        "img": "./shoes-pic/Jordan1RetroLowOGSPTravisScott-PhotoRoom.png-PhotoRoom.png",
+        "price":"$1,565"
+    },
+    {
+        "id":12,
+        "name": "Jordan 1 Retro Low",
+        "mainName": "Bred Toe",
+        "img": "./shoes-pic/Jordan1LowBredToe-PhotoRoom.png-PhotoRoom.png",
+        "price":"$115"
+    }
+]
