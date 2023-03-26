@@ -42,7 +42,7 @@ main {
     display: grid;
     place-items: center;
 }
-nav {
+.navbar {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background:rgba(0, 0, 0, 0);
     position: relative;
@@ -122,4 +122,32 @@ nav {
 }
 .show-links {
     height: 15rem;
+}
+.login-btn,.signup-btn {
+    background: transparent ;
+    border-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    font-style: bold;
+    color: white;
+    border: 1px solid white;
+    margin: 4px;
+    padding : 5px 8px 5px 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.signup-btn {
+    background: #353b48;
+    color: white;
+}
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+.signup-btn:hover {
+    background-color: white;
+    color: black;
+}
+.login-btn:active,
+.signup-btn:active {
+    transform: scale(0.9);
 }

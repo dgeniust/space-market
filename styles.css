@@ -31,14 +31,14 @@ a {
     text-transform: capitalize;
     line-height: 1.25;
     font-size: 2.5rem;
-    color: red;
+    color: #1B1464;
 }
 main {
     min-height: 100vh;
     display: grid;
     place-items: center;
 }
-nav {
+.navbar {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background:rgba(0, 0, 0, 0);
     position: relative;
@@ -129,15 +129,17 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     height: 250px;
     width: 300px;
-    border-radius: 4px;
+    transform: scale(0.98);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: all 0.3 ease-in-out;
+    transition: all .3s;
 }
 .card:hover {
-    background-color: red;
+    background-color: white;
+    box-shadow: 0px 0px 30px 1px #bdc3c7;
 }
 .card:active {
     transform: scale(1.04);
@@ -160,4 +162,30 @@ h2 {
     font-family: 'Roboto';
     font-weight: 900;
 }
-
+.login-btn,.signup-btn {
+    background: transparent ;
+    border-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    font-style: bold;
+    color: black;
+    border: 1px solid black;
+    margin: 4px;
+    padding : 5px 8px 5px 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.signup-btn {
+    background: #353b48;
+    color: white;
+}
+.login-btn:hover {
+    background-color: black;
+    color: white;
+}
+.signup-btn:hover {
+    background-color: black;
+}
+.login-btn:active,
+.signup-btn:active {
+    transform: scale(0.9);
+}
