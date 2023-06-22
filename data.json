@@ -152,5 +152,19 @@
         "mainName": "Wave Runner",
         "img": "./shoes-pic/yeezy 700 wave runner.png",
         "price":"$386"
+    },
+    {
+        "id":23,
+        "name": "Nike Dunk Low",
+        "mainName": "Industrial Blue Sashiko",
+        "img": "./shoes-pic/dunk low industrial.png",
+        "price":"145"
+    },
+    {
+        "id":24,
+        "name": "Nike Dunk Low",
+        "mainName": "Next Nature White Gym Red",
+        "img": "./shoes-pic/dunk low gym red.png",
+        "price":"$285"
     }
 ]
