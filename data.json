@@ -117,5 +117,40 @@
         "mainName": "Pale Ivory",
         "img": "./shoes-pic/panda.png",
         "price":"$163"
+    },
+    {
+        "id":18,
+        "name": "Nike Air Max 97",
+        "mainName": "Triple White Wolf Grey (2017/2023)",
+        "img": "./shoes-pic/97 triple white.png",
+        "price":"$138"
+    },
+    {
+        "id":19,
+        "name": "Nike Air Max 97",
+        "mainName": "Sean Wotherspoon (Extra Lace Set Only)",
+        "img": "./shoes-pic/air max 97 yellow.png",
+        "price":"$1000"
+    },
+    {
+        "id":20,
+        "name": "Nike Air Max 1 '86 OG",
+        "mainName": "Big Bubble Sport Red",
+        "img": "./shoes-pic/86 og bubble red.png",
+        "price":"$225"
+    },
+    {
+        "id":21,
+        "name": "Nike Air Max 1 '86 OG",
+        "mainName": "Big Bubble Light Armory Blue",
+        "img": "./shoes-pic/86 light armony blue.png",
+        "price":"$349"
+    },
+    {
+        "id":22,
+        "name": "adidas Yeezy Boost 700",
+        "mainName": "Wave Runner",
+        "img": "./shoes-pic/yeezy 700 wave runner.png",
+        "price":"$386"
     }
 ]
