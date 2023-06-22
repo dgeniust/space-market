@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 
 *,
@@ -26,28 +27,27 @@ a {
 }
 .homePage {
     letter-spacing: 1.5px;
-    font-family: 'Alkatra', sans-serif;
+    font-family: 'Kanit';
     margin: 0 0 0.75rem 5rem;
     text-transform: capitalize;
     line-height: 1.25;
     font-size: 2.5rem;
     color: #1B1464;
 }
-main {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-}
+
 .navbar {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background:rgba(0, 0, 0, 0);
-    position: relative;
+    background:white;
+    position: fixed;
+    margin-top: -40px;
+    z-index: 1;
 }
 .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    width: 1580px;
 }
 .nav-toggle {
     font-size: 1.8rem;
@@ -59,7 +59,6 @@ main {
     margin-right: 5rem;
 }
 .nav-toggle:hover {
-    color: red;
     transform: rotate(90deg);
 }
 .shopping-cart {
@@ -78,20 +77,44 @@ main {
     font-style: bold;
     color: black;
 }
-.finding{
-    background: transparent ;
-    border-color: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-style: bold;
-    color: black;
+/* thanh tìm kiếm */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
 }
-.searchItem {
-    height: 40px;
-    border-radius: 4px;
-    border: 2px solid black ;
+.input {
     width: 400px;
+    height: 40px;
+    line-height: 200px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
 }
+.input::placeholder {
+    color: #9e9ea7;
+}
+.input:focus, input:hover {
+    outline: none;
+    border-color: rgba(14, 5, 8, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(122, 114, 117, 0.1);
+}
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
 .links a {
     color: #2f3640;
     text-transform: capitalize;
@@ -104,7 +127,8 @@ main {
     transition: 0.3s all linear;
 }
 .links a:hover {
-    background: red;
+    background: black;
+    color: white;
     padding-left: 1.5rem;
 }
 .social-icon {
@@ -118,15 +142,19 @@ main {
 .show-links {
     height: 15rem;
 }
-.users-container {
+/* sản phẩm trong store */
+.item-in-store {
     margin-top: 40px;
+}
+.users-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(12.5rem,1fr));
+    gap: 2px;
+    margin: auto;
 }
 .card {
-    margin: 1px auto 40px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 40px;
     height: 250px;
     width: 300px;
     transform: scale(0.98);
@@ -135,11 +163,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: all .3s;
+    transition: all .1s;
 }
 .card:hover {
     background-color: white;
-    box-shadow: 0px 0px 30px 1px #bdc3c7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .card:active {
     transform: scale(1.04);
@@ -168,7 +196,6 @@ h2 {
     font-size: 1rem;
     cursor: pointer;
     font-style: bold;
-    color: black;
     border: 1px solid black;
     margin: 4px;
     padding : 5px 8px 5px 8px;
@@ -178,10 +205,7 @@ h2 {
     background: #353b48;
     color: white;
 }
-.login-btn:hover {
-    background-color: black;
-    color: white;
-}
+
 .signup-btn:hover {
     background-color: black;
 }
@@ -189,3 +213,7 @@ h2 {
 .signup-btn:active {
     transform: scale(0.9);
 }
+.login-btn a {
+    color: black;
+}
+

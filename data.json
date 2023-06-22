@@ -82,5 +82,40 @@
         "mainName": "Bred Toe",
         "img": "./shoes-pic/Jordan1LowBredToe-PhotoRoom.png-PhotoRoom.png",
         "price":"$115"
+    },
+    {
+        "id":13,
+        "name": "Nike Dunk Low Disrupt 2",
+        "mainName": "Phantom University Blue",
+        "img": "./shoes-pic/phantom universesity blue.png",
+        "price":"$153"
+    },
+    {
+        "id":14,
+        "name": "Nike Dunk Low Disrupt 2",
+        "mainName": "White University Blue",
+        "img": "./shoes-pic/white unieverses.png",
+        "price":"$122"
+    },
+    {
+        "id":15,
+        "name": "Nike Dunk Low Disrupt 2",
+        "mainName": "Panda",
+        "img": "./shoes-pic/panda.png",
+        "price":"$1,565"
+    },
+    {
+        "id":16,
+        "name": "Nike Dunk Low Disrupt 2",
+        "mainName": "Pale Ivory Black",
+        "img": "./shoes-pic/pale ivory black.png",
+        "price":"$330"
+    },
+    {
+        "id":17,
+        "name": "Nike Dunk Low Disrupt 2",
+        "mainName": "Pale Ivory",
+        "img": "./shoes-pic/panda.png",
+        "price":"$163"
     }
 ]

@@ -1,8 +1,10 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 *,
 ::after,
@@ -28,7 +30,7 @@ a {
 }
 .homePage {
     letter-spacing: 1.5px;
-    font-family: 'Alkatra', sans-serif;
+    font-family: 'Kanit';
     margin: 0 0 0.75rem 5rem;
     text-transform: capitalize;
     line-height: 1.25;
@@ -80,21 +82,7 @@ nav {
     font-style: bold;
     color: white;
 }
-/* CSS của thanh tìm kiếm  */
-/* .finding{
-    background: transparent ;
-    border-color: transparent;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-style: bold;
-    color: white;
-}
-.searchItem {
-    height: 40px;
-    border-radius: 4px;
-    border: 2px solid black ;
-    width: 400px;
-} */
+
 .links a {
     color: white;
     text-transform: capitalize;
@@ -124,12 +112,26 @@ nav {
 }
 .background-1 {
     display: flex;
-    justify-content: flex-end;
-    border: 1px solid white;
+    border: 1px solid white;   
+    position: relative;
+}
+.content-cre {
+    display: inline-block;
+
+}
+.content-cre h5 {
+    margin: 20px 0 0 50px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.content-cre p {
+    margin: 20px 0 0 50px;
+    font-family:'Roboto',sans-serif;
+    font-size: 16px;
 }
 .myVideo {
     width: 460px; 
-    height: 600px;
+    height: 550px;
     margin: -10px 100px;
 }
 

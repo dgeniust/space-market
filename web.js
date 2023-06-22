@@ -4,12 +4,6 @@ const userList = document.getElementById('users-list');
 
 
 navToggle.addEventListener('click', () => {
-    // if(links.classList.contains('show-links')) {
-    //     links.classList.remove('show-links');
-    // }
-    // else{
-    //     links.classList.add('show-links');
-    // }
     links.classList.toggle ('show-links');
 });
 
@@ -48,3 +42,4 @@ async function layDuLieu() {
     });
 }
 layDuLieu();
+

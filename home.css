@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 *,
 ::after,
 ::before {
@@ -17,7 +17,7 @@ body {
     font-family: 'Arimo';
     line-height: 1.5;
     color: black;
-    background: url('./mj.jpg');
+    /* background: url('./mj.jpg'); background cũ */
     /* background-repeat: no-repeat; */
     background-size:cover; 
 }
@@ -30,22 +30,18 @@ a {
 }
 .homePage {
     letter-spacing: 1.5px;
-    font-family: 'Alkatra', sans-serif;
+    font-family: 'Kanit';
     margin: 0 0 0.75rem 5rem;
     text-transform: capitalize;
     line-height: 1.25;
     font-size: 2.5rem;
-    color: white;
-}
-main {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
+    color: black;
 }
 .navbar {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background:rgba(0, 0, 0, 0);
     position: relative;
+    z-index: 1;
 }
 .nav-header {
     display: flex;
@@ -55,7 +51,7 @@ main {
 }
 .nav-toggle {
     font-size: 1.8rem;
-    color: white;
+    color: black;
     background: transparent ;
     border-color: transparent;
     transition: all 0.3s linear;
@@ -63,7 +59,7 @@ main {
     margin-right: 5rem;
 }
 .nav-toggle:hover {
-    color: white;
+    color: black;
     transform: rotate(90deg);
 }
 .shopping-cart {
@@ -72,7 +68,7 @@ main {
     font-size: 1.2rem;
     cursor: pointer;
     border: 0px;
-    color: white;
+    color: black;
 }
 .storage{
     background: transparent ;
@@ -80,24 +76,59 @@ main {
     font-size: 1.2rem;
     cursor: pointer;
     font-style: bold;
-    color: white;
+    color: black;
 }
-.finding{
-    background: transparent ;
-    border-color: transparent;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-style: bold;
-    color: white;
+.content-h1 {
+    display: flex;
+    justify-content: center;
 }
-.searchItem {
-    height: 40px;
-    border-radius: 4px;
-    border: 2px solid black ;
+.content-h1 h1 {
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-style:italic;
+}
+/* thanh tìm kiếm */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+.input {
     width: 400px;
+    height: 40px;
+    line-height: 200px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
 }
+.input::placeholder {
+    color: #9e9ea7;
+}
+.input:focus, input:hover {
+    outline: none;
+    border-color: rgba(14, 5, 8, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(122, 114, 117, 0.1);
+}
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* home, shop, about, contact */
 .links a {
-    color: white;
+    color: black;
     text-transform: capitalize;
     font-size: 1.2rem;
     line-height: 2.5rem;
@@ -108,12 +139,9 @@ main {
     transition: 0.3s all linear;
 }
 .links a:hover {
-    color: black;
-    background: white;
+    color: white;
+    background: black;
     padding-left: 1.5rem;
-}
-.social-icon {
-    display: none;
 }
 .links {
     height: 0;
@@ -123,31 +151,213 @@ main {
 .show-links {
     height: 15rem;
 }
+
+/* login, signup */
 .login-btn,.signup-btn {
     background: transparent ;
     border-color: transparent;
     font-size: 1rem;
     cursor: pointer;
     font-style: bold;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
     margin: 4px;
     padding : 5px 8px 5px 8px;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 .signup-btn {
     background: #353b48;
     color: white;
 }
-.login-btn:hover {
-    background-color: white;
-    color: black;
-}
+
 .signup-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
 }
 .login-btn:active,
 .signup-btn:active {
     transform: scale(0.9);
+}
+.login-btn a {
+    color: black;
+}
+
+/* slick slider */
+.image-slider {
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+.image {
+    height: 500px;
+    margin-bottom: 0px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.slick-initialized .slick-slide {
+    margin: 0 10px;
+}
+/* giới thiệu trend */
+.ctn-items {
+    margin: 20px 0 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh;
+    grid-gap: 8px;
+    position: relative;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+.grid-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+}
+.shoes-front {
+    height: 60vh;
+    border-radius: 20px;
+}
+.content-card h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+.content-card p {
+    margin: 20px 0 0 12px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+/* .item:hover {
+    /* background-color: black; */
+    /* color: white; */
+/* } */ 
+
+/* vài sản phẩm đg có trên sàn */
+.title-clock {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-style:italic;
+    font-size: 25px;
+}
+.time-cd {
+    padding: 35px 0 0 20px;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+.line3 {
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+}
+.random-items {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-image: url("./shoes-pic/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 20%;
+}
+.myCard {
+    margin-top: 50px;
+    width: 260px;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 20px;
+}
+  
+.shoes-random {
+    height: 250px;
+}
+  
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+  
+.flipCard {
+    transform: rotateY(180deg);
+}
+  
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border: 1px solid rgba(255, 255, 255, 0.8); */
+    border-radius: 20px;
+    font-weight: 700;
+}
+  
+.frontSide,
+.frontSide::before {
+    background-image: url("https://i.pinimg.com/564x/06/1d/e3/061de37a4b675c29a22f3114f24e3484.jpg");
+    background-size: cover;
+    background-position-y: 65%;
+}
+  
+.backSide,
+.backSide::before {
+    background-image: url("https://i.pinimg.com/564x/cb/f3/6b/cbf36b0c843d74572526f482d0262cfd.jpg");
+    background-size: cover;
+    background-position-y: 70%;
+}
+  
+.backSide {
+    transform: rotateY(180deg);
+}
+  
+.frontSide::before,
+.backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    /* width: 105%;
+    height: 105%; */
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    /* filter: blur(8px); */
+}
+.backSide h1 {
+    color: black;
+    font-size: 20px;
+}
+
+.backSide p {
+    color: black;
+    font-size: 19px;
+}
+/* upcomming */
+.fixing {
+    height: 60vh;
 }
