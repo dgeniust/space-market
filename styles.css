@@ -18,6 +18,7 @@ body {
     font-family: 'Arimo';
     line-height: 1.5;
     color: black;
+    overflow:auto;
 }
 ul {
     list-style-type: none;
@@ -38,9 +39,6 @@ a {
 .navbar {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background:white;
-    position: fixed;
-    margin-top: -40px;
-    z-index: 1;
 }
 .nav-header {
     display: flex;
@@ -154,7 +152,6 @@ a {
     margin: auto;
 }
 .card {
-    margin-top: 40px;
     height: 250px;
     width: 300px;
     transform: scale(0.98);
@@ -167,6 +164,7 @@ a {
 }
 .card:hover {
     background-color: white;
+    transform: translateY(-7px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .card:active {

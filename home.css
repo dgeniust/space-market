@@ -237,10 +237,10 @@ a {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
-/* .item:hover {
-    /* background-color: black; */
-    /* color: white; */
-/* } */ 
+.item:hover {
+    transform: translateY(-7px); 
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+} 
 
 /* vài sản phẩm đg có trên sàn */
 .title-clock {
@@ -326,9 +326,10 @@ h3 {
   
 .backSide,
 .backSide::before {
-    background-image: url("https://i.pinimg.com/564x/cb/f3/6b/cbf36b0c843d74572526f482d0262cfd.jpg");
+    /* background-image: url("https://i.pinimg.com/564x/cb/f3/6b/cbf36b0c843d74572526f482d0262cfd.jpg"); */
     background-size: cover;
     background-position-y: 70%;
+    background-color: white;
 }
   
 .backSide {
