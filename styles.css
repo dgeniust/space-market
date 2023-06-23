@@ -18,7 +18,9 @@ body {
     font-family: 'Arimo';
     line-height: 1.5;
     color: black;
-    overflow:auto;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 ul {
     list-style-type: none;
