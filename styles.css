@@ -216,4 +216,6 @@ h2 {
 .login-btn a {
     color: black;
 }
-
+.signup-btn a {
+    color: white;
+}

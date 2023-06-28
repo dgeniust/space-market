@@ -1,0 +1,27 @@
+{
+  "name": "space-market",
+  "version": "1.0.0",
+  "description": "sell shoes",
+  "main": "dn.js",
+  "scripts": {
+    "start" : "nodemon dn.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgeniust/space-market.git"
+  },
+  "keywords": [
+    "space",
+    "shoes"
+  ],
+  "author": "Nguyen Thanh Dat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgeniust/space-market/issues"
+  },
+  "homepage": "https://github.com/dgeniust/space-market#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -184,7 +184,9 @@ a {
 .login-btn a {
     color: black;
 }
-
+.signup-btn a {
+    color: white;
+}
 /* slick slider */
 .image-slider {
     padding-bottom: 50px;
@@ -242,7 +244,7 @@ a {
 }
 .item:hover {
     transform: translateY(-7px); 
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    box-shadow: rgba(4, 4, 4, 0.4) 0px 5px, rgba(99, 97, 98, 0.3) 0px 10px, rgba(136, 129, 133, 0.2) 0px 15px, rgba(234, 226, 231, 0.1) 0px 20px, rgba(251, 251, 251, 0.05) 0px 25px;
 } 
 
 /* vài sản phẩm đg có trên sàn */
@@ -285,11 +287,12 @@ h3 {
     perspective: 1000px;
     border-radius: 20px;
 }
-  
+.myCard:hover {
+    transform: scale(1.1);
+}
 .shoes-random {
     height: 250px;
 }
-  
 .innerCard {
     position: relative;
     width: 100%;
