@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./jd1.png">
     <link rel="icon" type="image/x-icon" href="./logo-buysr.png">
-
-    <!-- Google Icon -->
+        <!-- Google Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
-    <!-- FontAwesome -->
+        <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="./contact.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="./shop.css">
+    <title>SpaceShoes</title>
 </head>
 <body>
-    <nav>
+    <div class="navbar">
         <div class="nav-center">
             <div class="nav-header">
                 <a href="./index.html" class="homePage">SpaceShoes</a>
+                <div class="wrap">
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                        <input placeholder="Search" type="search" class="input">
+                    </div>
+                 </div>
                 <button class="shopping-cart"><i class="fa-solid fa-cart-shopping"></i></button>
                 <button class="storage"><i class="material-symbols-outlined">shopping_bag</i><a href="./index.html"></a></button>
+                <div class="login">
+                    <button class="login-btn"><a href="./sign.html">Login</a></button>
+                    <button class="signup-btn"><a href="./sign.html">Sign Up</a></button>
+                </div>
                 <button class="nav-toggle"><i class="fas fa-bars"></i></button>
             </div>
             <ul class="links">
@@ -37,19 +46,13 @@
                     <a href="contact.html">contact</a>
                 </li>
             </ul>
-            </div>
-    </nav>
-    
-    <div class="background-1">
-        <div class="content-cre">
-            <h5>SpaceMarketplace</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi est aperiam adipisci harum maiores? Similique ducimus dicta nesciunt sapiente nostrum vitae perferendis ut. Ad accusamus deleniti sit, eius, minus molestiae placeat modi adipisci ratione laborum cupiditate a explicabo laudantium, necessitatibus totam! Neque, illo impedit quidem voluptas omnis maiores natus, iure dolore qui, reiciendis recusandae consectetur voluptatem. Vero aperiam sapiente nihil fuga hic illum laboriosam reiciendis? Ex eos pariatur accusantium fugiat labore aperiam eligendi quae quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti dolorem cupiditate iste est iure sequi molestias nihil pariatur magni, architecto dolor! Consequatur saepe modi necessitatibus explicabo. Eos, placeat modi.</p> 
-        </div>       
-        <video autoplay loop class="myVideo">
-            <source src="./videojd.mp4" type="video/mp4">
-        </video>
+        </div>
     </div>
-    <script src="./home.js"></script>
+    <div class="item-in-store">
+        <div class="users-container" id="users-list"></div>
+    </div>    
+    <script src="./shop.js"></script>
 </body>
 </html>
+
+
