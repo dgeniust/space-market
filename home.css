@@ -20,6 +20,8 @@ body {
     /* background: url('./mj.jpg'); background cũ */
     /* background-repeat: no-repeat; */
     background-size:cover; 
+    /* không cho bôi đen */
+    user-select: none;    
 }
 body::-webkit-scrollbar {
     display: none;

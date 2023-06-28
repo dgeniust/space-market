@@ -16,6 +16,8 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 	overflow: hidden;
+	/* không cho bôi đen */
+	user-select: none;
 }
 
 h1 {
