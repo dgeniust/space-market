@@ -18,6 +18,7 @@ body {
     font-family: 'Arimo';
     line-height: 1.5;
     color: black;
+    user-select: none;
 }
 body::-webkit-scrollbar {
     display: none;

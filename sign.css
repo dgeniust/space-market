@@ -7,7 +7,7 @@
 }
 
 body {
-	background: #f6f5f7;
+	background: #dfe6e9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,6 +50,7 @@ a {
     line-height: 1.25;
     font-size: 2.5rem;
     color: black;
+	margin-bottom: 40px;
 }
 /* buttons Sign in-Sign up */
 .btn, .ghost {

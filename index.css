@@ -253,16 +253,21 @@ a {
 .title-clock {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 h3 {
-    padding-top: 30px;
+    padding-top: 5px;
+    width: 150px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-style:italic;
     font-size: 25px;
+    border: 1px solid black;
 }
 .time-cd {
-    padding: 35px 0 0 20px;
+    padding: 15px 0 0 20px;
     font-size: 20px;
     font-family: 'Arimo', sans-serif;
 }
