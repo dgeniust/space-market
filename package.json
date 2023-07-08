@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^18.14.0"
+  },
+  "name": "space-market",
+  "version": "1.0.0",
+  "main": "dn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect dn.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgeniust/space-market.git"
+  },
+  "keywords": [
+    "spaceshoes"
+  ],
+  "author": "dgeniust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgeniust/space-market/issues"
+  },
+  "homepage": "https://github.com/dgeniust/space-market#readme",
+  "description": "",
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}

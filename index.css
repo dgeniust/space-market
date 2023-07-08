@@ -253,10 +253,11 @@ a {
 .title-clock {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
     align-items: center;
-}
+}  
+
 h3 {
     padding-top: 5px;
     width: 150px;
@@ -265,16 +266,47 @@ h3 {
     font-style:italic;
     font-size: 25px;
     border: 1px solid black;
+    z-index: 100;
+}
+.nature {
+    width: 150px;
+    height: 40px;
+    background:
+        radial-gradient(circle 25px at top right, #ffd738 40%,#0000 ),
+        #4dbefa;
+    position: relative;
+    overflow:hidden;
+}
+.nature:before,
+.nature:after{  
+    content:"";
+    position:absolute;
+    top:4px;
+    left:-40px;
+    width:36px;
+    height:20px;
+    --c: radial-gradient(farthest-side,#fff 96%,#0000);
+    background: 
+        var(--c) 100% 100% /30% 60%, 
+        var(--c) 70% 0 /50% 100%, 
+        var(--c) 0 100% /36% 68%, 
+        var(--c) 27% 18% /26% 40%,
+        linear-gradient(#fff 0 0) bottom/67% 58%;
+    background-repeat: no-repeat;
+    animation:n10 4s linear infinite;
+}
+.nature:after {
+    top:15px;
+    --l:200%;
+}
+
+@keyframes n10{
+    100% {left:var(--l,105%)}
 }
 .time-cd {
     padding: 15px 0 0 20px;
     font-size: 20px;
     font-family: 'Arimo', sans-serif;
-}
-.line3 {
-    border: 1px solid black;
-    width: 30%;
-    margin: auto;
 }
 .random-items {
     height: 70vh;
